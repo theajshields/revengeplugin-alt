@@ -15,7 +15,7 @@ export default {
         if (!content?.message?.channel_id || !content?.options) return;
 
         const channel = getChannel(content.message.channel_id);
-        if (!channel?.nsfw_) return;
+        return;
 
         content.options.inlineEmbedMedia = false;
         content.options.shouldObscureSpoiler = true;
